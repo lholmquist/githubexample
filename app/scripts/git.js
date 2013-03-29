@@ -20,7 +20,10 @@ $( function() {
 
     dataManager = AeroGear.DataManager({
         name: "commitStore",
-        type: "SessionLocal"
+        type: "SessionLocal",
+        settings: {
+            storageType: "localStorage"
+        }
     });
 
     commitStore = dataManager.stores.commitStore;
